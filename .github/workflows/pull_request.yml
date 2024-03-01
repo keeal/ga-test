@@ -13,6 +13,7 @@ jobs:
       - run: |
           echo "the value: ${{ vars.REPO_VAR1 }}"
           echo "more line from repo"
+          echo "more line from remote ${{ vars.REPO_VAR1 }}"
           
 
 
