@@ -9,9 +9,11 @@ concurrency:
 jobs:
   custom:
     runs-on: ubuntu-latest
+    environment: TEST_VAR
     steps:
       - run: |
           echo "the value: ${{ vars.REPO_VAR1 }}"
+          echo "local env var ${{ vars.SOME_KEY }}"
           echo "more line from repo"
           
 
