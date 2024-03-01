@@ -1,0 +1,17 @@
+name: Test and build
+
+on: [pull_request]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  custom:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "the value: ${{ vars.SOME_KEY}}"
+          
+
+
