@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "the value: ${{ vars.TEST_VAR_SOME_KEY}}"
+          echo "the value: ${{ vars.REPO_VAR1 }}"
           echo "more line from repo"
           
 
