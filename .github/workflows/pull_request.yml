@@ -12,6 +12,7 @@ jobs:
     steps:
       - run: |
           echo "the value: ${{ vars.SOME_KEY}}"
+          echo "more line from repo"
           
 
 
